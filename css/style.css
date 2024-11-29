@@ -1,0 +1,63 @@
+/* Estilos para centrar el contenido del body usando Flexbox */
+html, body {
+    height: 100%; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro del body */
+    font-family: Arial, sans-serif; /* Establece una fuente estándar */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilos para el contenedor del formulario */
+.login {
+    display: inline-block; /* Hace que el div se ajuste al contenido y se alinee en el centro */
+    padding: 20px; /* Agrega un poco de espacio alrededor del formulario */
+    border: 1px solid #ccc; /* Agrega un borde para distinguir el área */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo para el área de login */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 10px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilos para las etiquetas y los campos de entrada */
+label {
+    font-weight: bold; /* Resalta las etiquetas */
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Hace que el campo de entrada ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del campo */
+}
+
+/* Estilo para el botón de confirmacion de usuario */
+button {
+    transition: background-color 0.9s ease;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: hsla(98, 73%, 47%, 0.733); /* Cambia el color del botón al pasar el mouse */
+}
